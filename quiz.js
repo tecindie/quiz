@@ -94,10 +94,10 @@ const showQuestion = (qNumber) =>{
         ` )
         .join("");
 
-        selectedAnswer();
+        selectAnswer();
     };
 
-    const selectedAnswer = () => {
+    const selectAnswer = () => {
         answersContainer.querySelectorAll("input").forEach((el) =>{
             el.addEventListener("click",(e) =>{
                 selectedAnswer = e.target.value;
